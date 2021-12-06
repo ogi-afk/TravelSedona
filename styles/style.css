@@ -1,6 +1,7 @@
 
+
 @font-face {
-  font-family: "PT Sans Regular";
+font-family: "PT Sans Regular";
   font-style:normal;
   font-weight: 400;
   src: url("fonts/PTSans-Regular.tff")format("ttf");
@@ -64,11 +65,11 @@ border: 4px;
 }
 
 .main-logo {
-color: #000000;
-background-color: #ffffff;
-background-image: url ("/images/index-background.png");
-background-size: 100% auto;
-background-repeat: no-repeat;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url(/images/index-background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .main{
@@ -85,7 +86,7 @@ text-align: center;
 }
 
 .info-list{
-  font-family: "PT Sans Bolt", sans-serif;
+font-family: "PT Sans Bolt", sans-serif;
   font-size: 18px;
   line-height: 21px;
   display: flex;
@@ -93,12 +94,12 @@ justify-content: space-between;
 
 }
 .columncolor1{
-  color: #ffffff;
+color: #ffffff;
   background-color:#83B3D3;
 }
 .columncolor2{
-  color:#333333;
-  background-color: #83B3D31F;
+color:#333333;
+background-color: #83B3D31F;
   ;
 }
 .columncolor3{
@@ -124,7 +125,7 @@ h3{
   text-transform: uppercase;
 }
 .button2{
-  font-size: 20px;
+font-size: 20px;
 line-height: 36px;
 text-transform: uppercase;
 color:#ffffff;
