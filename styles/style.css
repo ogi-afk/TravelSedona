@@ -1,35 +1,44 @@
-
-
 @font-face {
-font-family: "PT Sans Regular";
-  font-style:normal;
+  font-family: "PT Sans Regular";
+  font-style: normal;
   font-weight: 400;
-  src: url("fonts/PTSans-Regular.tff")format("ttf");
+  src: url("fonts/PTSans-Regular.tff") format("ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans italic";
-  font-style:italic;
+  font-style: italic;
   font-weight: 400;
-  src: url("fonts/PTSans-Italic.ttf")format("ttf");
+  src: url("fonts/PTSans-Italic.ttf") format("ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans Bolt";
-  font-style:normal;
+  font-style: normal;
   font-weight: 700;
-  src: url("fonts/PTSans-Bold.tff")format("ttf");
+  src: url("fonts/PTSans-Bold.tff") format("ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans Bolt italic";
-  font-style:italic;
+  font-style: italic;
   font-weight: 700;
-  src: url("fonts/PTSans-BoldItalic.tff")format("ttf");
+  src: url("fonts/PTSans-BoldItalic.tff") format("ttf");
   font-display: swap;
+}
+
+.visually-hidden {
+  position: absolsute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
@@ -38,30 +47,39 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  width: 1200px;
+  text-align: center;
 }
-.page-header{
+
+.page-header {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+
 }
 
 .navigation-list {
-font-family: "PT Sans Bolt", sans-serif;
-line-height: 25,88px;
-font-size: 20px;
-color:#000000;
-background-color:#ffffff;
-font-weight: 700;
-text-decoration: none;
+  font-family: "PT Sans Bolt", sans-serif;
+  line-height: 25, 88px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  gap: 33px;
+}
 
+.navigation-item {
 }
 
 .button1 {
-font-size: 16px;
-line-height: 20.7px;
-text-transform: uppercase;
-color:#ffffff;
-background-color:#756257;
-border: 4px;
+  font-size: 16px;
+  line-height: 20.7px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+  border: 4px;
 }
 
 .main-logo {
@@ -72,80 +90,84 @@ border: 4px;
   background-repeat: no-repeat;
 }
 
-.main{
-  text-align: center;
-}
-
-
-.mainText{
-font-family: "PT Sans Bolt", sans-serif;
-font-size: 30px;
-line-height: 36px;
-text-transform: uppercase;
-text-align: center;
-}
-
-.info-list{
-font-family: "PT Sans Bolt", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+.benefits-list {
   display: flex;
-justify-content: space-between;
-
-}
-.columncolor1{
-color: #ffffff;
-  background-color:#83B3D3;
-}
-.columncolor2{
-color:#333333;
-background-color: #83B3D31F;
-  ;
-}
-.columncolor3{
-  color:#333333;
-  background-color:#83B3D333;
-}
-h2 {
-  font-family: "PT Sans Bolt", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
 }
 
-h3{
-  font-family: "PT Sans Bolt", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+.benefits-list-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 384px;
 }
 
-.titleh2{
-  font-family: "PT Sans Bolt", sans-serif;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-.button2{
-font-size: 20px;
-line-height: 36px;
-text-transform: uppercase;
-color:#ffffff;
-background-color:#756257;
-border-radius: 10px;
+.list-items {
+  display: flex;
 }
 
-.main-footer{
+.benefits-images {
+  width: 1200;
+  height: 400;
+}
+
+.benefits-list .benefitst-imagees2 {
+  order: -1;
+}
+
+.benefits-items {
+  height: 384px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+.main {
   text-align: center;
 }
 
-.e-mail{
-  color:#ffffff
-  background-color: #000000;
-  background-image: url (/images/background.png);
-}
-
-.e-mail >h2{
+.mainText {
   font-family: "PT Sans Bolt", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.button2 {
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+  border-radius: 10px;
+}
+
+.main-footer {
+  color:#ffffff;
+  background-color:#000000;
+  display: none;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.background-e-mail {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url(/images/background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+
+.social-kontakt{
+display: flex;
 }
