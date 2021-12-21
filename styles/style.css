@@ -41,13 +41,24 @@
   overflow: hidden;
 }
 
+.conteiner {
+  max-width: 1057px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.conteiner2 {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
 body {
   font-family: "PT Sans Regular", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  width: 1200px;
 }
 
 .page-header {
@@ -90,22 +101,37 @@ body {
   align-items: center;
 }
 
+.element-style {
+  display: flex;
+  gap: 20px;
+}
+.element-style1 {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+.element-style2 {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
 .button-want {
   font-size: 16px;
   line-height: 20.7px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756257;
-  border: 4px;
-  width: 160px;
-  height: 37px;
+  border-radius: 4px;
+  padding: 9px 34px;
 }
 
 .main-logo {
   color: #000000;
   background-color: #ffffff;
   background-image: url(/images/index-background.png);
-  background-size: 100% auto;
+  background-size: 100%;
   background-repeat: no-repeat;
   padding: 51px 372px 81px 372px;
   position: relative;
@@ -288,11 +314,6 @@ body {
   margin: 73px;
 }
 
-.conteiner {
-  max-width: 1057px;
-  padding: 0px 15px;
-  margin: 0px auto;
-}
 .search {
   color: #ffffff;
   background-color: #000000;
